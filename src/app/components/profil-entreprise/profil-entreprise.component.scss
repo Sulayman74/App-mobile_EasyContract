@@ -1,0 +1,49 @@
+.formulaire {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  #main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(205, 134, 63, 0.148);
+    border-radius: 3px;
+    .adresse {
+      .mat-form-field {
+        p {
+          padding: 5px;
+        }
+      }
+    }
+    .mat-form-field {
+      padding: 0 80px;
+    }
+    .button-edition {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+#edit {
+  margin-top: 5px;
+  padding: 5px 45px;
+  transition: all ease 0.4s;
+
+  &:hover {
+    background-color: whitesmoke;
+    box-shadow: 5px 3px 2px black;
+    .mat-icon {
+      color: blue;
+    }
+  }
+}

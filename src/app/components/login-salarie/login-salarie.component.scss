@@ -1,0 +1,74 @@
+$primary-color: #0275d8;
+$secondary-color: #0274d881;
+$main-police : 'Roboto',
+sans-serif;
+$second-police : 'Montserrat',
+sans-serif;
+$poppin-police : 'Poppins',
+sans-serif;
+
+.titre {
+    margin-top: 60px;
+    padding: 30px 0;
+    text-align: center;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.699));
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    border-radius: 5px;
+   
+
+    .formulaire {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        // width: 50%;
+        height: 50%;
+        // background-position: center;
+
+        .champs {
+            width: 100%;
+            background-color: transparent;
+            font-family: $main-police;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            button {
+                font-family: $poppin-police;
+                font-weight: 500;
+                transition: all ease 0.3s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+
+
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
